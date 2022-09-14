@@ -23,6 +23,9 @@ fetch('./texts.json')
 const typeController = e => {
   const newLetter = e.key;
 
+  // console.log('Inside typeController():');
+  //   console.log(userText);
+
   // Handle backspace press
   if (newLetter == 'Backspace') {
     userText = userText.slice(0, userText.length - 1);
@@ -47,6 +50,7 @@ const typeController = e => {
       newLetter === ' ' ? '▪' : newLetter
     }</span>`;
   } else {
+    errorCount++;
     display.innerHTML += `<span class="red">${
       newLetter === ' ' ? '▪' : newLetter
     }</span>`;
