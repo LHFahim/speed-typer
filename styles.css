@@ -5,10 +5,10 @@
 }
 
 body {
-  background-image: url("./bg.png");
+  background-image: url('./bg.png');
   background-size: cover;
   background-position: left top;
-  font-family: "Zilla Slab", serif;
+  font-family: 'Zilla Slab', serif;
 }
 
 .box-container {
@@ -63,7 +63,7 @@ body {
 }
 #result {
   position: fixed;
-  top: 10%; 
+  top: 10%;
   left: 10%;
   transform: translate(-50%, -50%);
   height: 250px;
@@ -75,7 +75,7 @@ body {
   text-align: center;
   padding: 2rem;
 }
-#show-time{
+#show-time {
   text-align: center;
   color: white;
   margin: 10px 0;
@@ -142,9 +142,14 @@ button {
 }
 
 #histories {
-  display: flex;
+  /* display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-around; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
 }
 
 .card {
@@ -188,5 +193,14 @@ button {
   }
   .card {
     flex-direction: column;
+  }
+
+  #histories {
+    /* display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around; */
+
+    grid-template-columns: repeat(1, 1fr);
   }
 }
