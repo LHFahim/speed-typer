@@ -204,3 +204,21 @@ button {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
+/* blog css */
+
+#blog-container {
+  color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.question {
+  border: 1px solid blue;
+  padding: 10px;
+}
+
+.question-title {
+  margin-bottom: 10px;
+}
