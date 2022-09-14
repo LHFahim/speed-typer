@@ -76,6 +76,9 @@ const gameOver = () => {
   // show result modal
   resultModal.innerHTML = '';
   resultModal.classList.toggle('hidden');
+  resultModal.style.top = '50%';
+  resultModal.style.left = '50%';
+
   modalBackground.classList.toggle('hidden');
   // clear user text
   display.innerHTML = '';
